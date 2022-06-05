@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div  class="navimg">
+        <a href="#"><img src="/image/logo.jpg" height="70px"  alt="Logo of the website"></a>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li><a onclick="newFunction('Home')"  id="content" class="content" href="#">Home</a></li>
+            <li><a onclick="newFunction('Profile')" id="content" class="content" href="#">Profile</a></li>
+            <li><a onclick="newFunction('Download')" id="content" class="content" href="#">Download<img class="down-arrow" src="/image/down-arrow.png" alt=""></a></li>
+            <li><a onclick="newFunction('upload')" id="content" class="content" href="#">Upload<img class="down-arrow" src="/image/down-arrow.png" alt=""></a></li>
+            <li><a onclick="newFunction('Settings')" id="content" class="content" href="#">Settings<img class="down-arrow" src="/image/down-arrow.png" alt=""></a></li>
+            <li><a onclick="newFunction()" id="content" class="content" href="#">About</a></li>
+        </ul>
+    </div>
+
+    </header>
+
+    <main>
+        <div class="container2">
+            <h1>Sign in</h1>
+            <hr>
+            <div id="container3">
+            <label id="inputbox-name" for="inputbox">Username</label>
+            <br>
+            <input type="text">
+            <br>
+            <label id="inputbox-name" for="inputbox">Password</label>
+            <br>
+            <input type="password">
+            </div>
+
+        </div>
+        <div class="container2">
+            <h1>Sign up</h1>
+            <hr>
+            <div id="container3">
+            <label id="inputbox-name" for="inputbox">Username</label>
+            <br>
+            <input type="text">
+            <br>
+            <label id="inputbox-name" for="inputbox">Password</label>
+            <br>
+            <input type="password">
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function newFunction(){
+            document.getElementById("content").value=alert("You are Watched")
+        }
+
+    </script>
+
+</body>
+</html>
